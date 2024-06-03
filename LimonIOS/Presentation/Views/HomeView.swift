@@ -15,17 +15,38 @@ struct HomeView: View {
     // @ObservedObject var homeViewModel = HomeViewModel(useCase: UseCaseHome())
     
     var body: some View{
-        NavigationStack{
-            
+        ZStack{
+            Image("Background")
+                      .resizable()
+                      .scaledToFit()
+                      .edgesIgnoringSafeArea(.all)
+            Color.white.opacity(0.5)
+            .edgesIgnoringSafeArea(.all)
+
+            VStack{
+                Spacer()
+                LemonButton( lemonButtonCat: [LemonButtonCat(name: "Test", points: 3),LemonButtonCat(name: "Test", points: 3),LemonButtonCat(name: "Test", points: 3),LemonButtonCat(name: "Test", points: 3),LemonButtonCat(name: "Test", points: 0),LemonButtonCat(name: "Test", points: 3)] )
+                
+                Spacer()
+                Button("Borrar token"){
+                    tokenManager.deleteToken()
+                }
+                
+                Spacer()
+                Spacer()
+            }
         }
-        Text("Todo")
-        Button("Borrar token"){
-            tokenManager.deleteToken()
-        }
+      
+        .navigationTitle("Home")
+
     }
     
 }
     
 
+#Preview {
+    HomeView()
+        .environmentObject(TokenManager())
+}
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D1061542C0B45550089B8D9 /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1061532C0B45550089B8D9 /* QuestionsView.swift */; };
 		8D34472C2BEBE4E600CB8D7A /* LimonIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34472B2BEBE4E600CB8D7A /* LimonIOSApp.swift */; };
 		8D34472E2BEBE4E600CB8D7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34472D2BEBE4E600CB8D7A /* ContentView.swift */; };
 		8D3447302BEBE4E800CB8D7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D34472F2BEBE4E800CB8D7A /* Assets.xcassets */; };
@@ -17,6 +18,8 @@
 		8D391CE72BFB5F4800495200 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D391CE62BFB5F4800495200 /* Keychain.swift */; };
 		8D391CEA2BFB5F8000495200 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8D391CE92BFB5F8000495200 /* KeychainSwift */; };
 		8D391CEC2BFB6F0500495200 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D391CEB2BFB6F0500495200 /* TokenManager.swift */; };
+		8D6218382C04CE4800EBD716 /* LemonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6218372C04CE4800EBD716 /* LemonButton.swift */; };
+		8D62183A2C04D7BD00EBD716 /* LemonButtonCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6218392C04D7BD00EBD716 /* LemonButtonCat.swift */; };
 		8DA297612BFE08F4001BF80A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8DA297602BFE08F4001BF80A /* .gitignore */; };
 		8DB0D6C92BF8E1D4007A0589 /* ExtensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0D6C82BF8E1D4007A0589 /* ExtensionColor.swift */; };
 		8DB0D6CC2BF8E531007A0589 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0D6CB2BF8E531007A0589 /* CustomTextfield.swift */; };
@@ -50,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D1061532C0B45550089B8D9 /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
 		8D3447282BEBE4E600CB8D7A /* LimonIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LimonIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D34472B2BEBE4E600CB8D7A /* LimonIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimonIOSApp.swift; sourceTree = "<group>"; };
 		8D34472D2BEBE4E600CB8D7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 		8D3447482BEBE4E800CB8D7A /* LimonIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimonIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8D391CE62BFB5F4800495200 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		8D391CEB2BFB6F0500495200 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		8D6218372C04CE4800EBD716 /* LemonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonButton.swift; sourceTree = "<group>"; };
+		8D6218392C04D7BD00EBD716 /* LemonButtonCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonButtonCat.swift; sourceTree = "<group>"; };
 		8DA297602BFE08F4001BF80A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8DB0D6C82BF8E1D4007A0589 /* ExtensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionColor.swift; sourceTree = "<group>"; };
 		8DB0D6CB2BF8E531007A0589 /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTextfield.swift; path = "../Presentation/New Group/CustomTextfield.swift"; sourceTree = "<group>"; };
@@ -188,6 +194,7 @@
 		8D3447572BEBE64500CB8D7A /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				8D6218362C04CE3700EBD716 /* Components */,
 				8D34475A2BEBE66B00CB8D7A /* ViewModels */,
 				8D3447592BEBE66100CB8D7A /* Views */,
 			);
@@ -209,6 +216,7 @@
 			children = (
 				8DD279B12BF3616500FC708F /* LoginView.swift */,
 				8DD279B32BF3619000FC708F /* HomeView.swift */,
+				8D1061532C0B45550089B8D9 /* QuestionsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,8 +250,17 @@
 			isa = PBXGroup;
 			children = (
 				8DD7FDF32BF383CB00E8C901 /* LoginResponse.swift */,
+				8D6218392C04D7BD00EBD716 /* LemonButtonCat.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8D6218362C04CE3700EBD716 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8D6218372C04CE4800EBD716 /* LemonButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		8DD7FDF52BF384F400E8C901 /* Network */ = {
@@ -407,7 +424,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D6218382C04CE4800EBD716 /* LemonButton.swift in Sources */,
+				8D62183A2C04D7BD00EBD716 /* LemonButtonCat.swift in Sources */,
 				8DB0D6CC2BF8E531007A0589 /* CustomTextfield.swift in Sources */,
+				8D1061542C0B45550089B8D9 /* QuestionsView.swift in Sources */,
 				8DD279B22BF3616500FC708F /* LoginView.swift in Sources */,
 				8DD279B42BF3619000FC708F /* HomeView.swift in Sources */,
 				8D34472E2BEBE4E600CB8D7A /* ContentView.swift in Sources */,
