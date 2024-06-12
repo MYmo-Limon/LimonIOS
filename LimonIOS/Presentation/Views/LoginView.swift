@@ -55,7 +55,7 @@ struct LoginView: View {
                 .padding()
                 .background(Color.PrimaryCustom)
                 .cornerRadius(10)
-                .foregroundColor(.white)
+                .foregroundColor(.black)
             
             Spacer()
             Spacer()

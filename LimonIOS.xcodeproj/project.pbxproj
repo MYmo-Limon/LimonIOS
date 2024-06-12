@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8D1061542C0B45550089B8D9 /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1061532C0B45550089B8D9 /* QuestionsView.swift */; };
+		8D1061562C0F190F0089B8D9 /* QuestionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1061552C0F190F0089B8D9 /* QuestionComponent.swift */; };
+		8D1061582C147A5E0089B8D9 /* SegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1061572C147A5E0089B8D9 /* SegmentedPicker.swift */; };
 		8D34472C2BEBE4E600CB8D7A /* LimonIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34472B2BEBE4E600CB8D7A /* LimonIOSApp.swift */; };
 		8D34472E2BEBE4E600CB8D7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34472D2BEBE4E600CB8D7A /* ContentView.swift */; };
 		8D3447302BEBE4E800CB8D7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D34472F2BEBE4E800CB8D7A /* Assets.xcassets */; };
@@ -23,8 +25,13 @@
 		8DA297612BFE08F4001BF80A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8DA297602BFE08F4001BF80A /* .gitignore */; };
 		8DB0D6C92BF8E1D4007A0589 /* ExtensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0D6C82BF8E1D4007A0589 /* ExtensionColor.swift */; };
 		8DB0D6CC2BF8E531007A0589 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0D6CB2BF8E531007A0589 /* CustomTextfield.swift */; };
+		8DD220882C1704AE00DEF4FD /* QuestionsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD220872C1704AE00DEF4FD /* QuestionsUseCase.swift */; };
+		8DD2208A2C17053B00DEF4FD /* UseCaseQuestionsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD220892C17053B00DEF4FD /* UseCaseQuestionsProtocol.swift */; };
+		8DD2208C2C17067F00DEF4FD /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2208B2C17067F00DEF4FD /* QuestionsViewModel.swift */; };
+		8DD2208E2C170DFF00DEF4FD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2208D2C170DFF00DEF4FD /* Question.swift */; };
 		8DD279B22BF3616500FC708F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD279B12BF3616500FC708F /* LoginView.swift */; };
 		8DD279B42BF3619000FC708F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD279B32BF3619000FC708F /* HomeView.swift */; };
+		8DD379DD2C18BE5A00AB769D /* MockedQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD379DC2C18BE5A00AB769D /* MockedQuestions.swift */; };
 		8DD7FDF02BF382D700E8C901 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7FDEF2BF382D700E8C901 /* LoginViewModel.swift */; };
 		8DD7FDF22BF3836C00E8C901 /* UseCaseAuthProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7FDF12BF3836C00E8C901 /* UseCaseAuthProtocol.swift */; };
 		8DD7FDF42BF383CB00E8C901 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7FDF32BF383CB00E8C901 /* LoginResponse.swift */; };
@@ -54,6 +61,8 @@
 
 /* Begin PBXFileReference section */
 		8D1061532C0B45550089B8D9 /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
+		8D1061552C0F190F0089B8D9 /* QuestionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionComponent.swift; sourceTree = "<group>"; };
+		8D1061572C147A5E0089B8D9 /* SegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPicker.swift; sourceTree = "<group>"; };
 		8D3447282BEBE4E600CB8D7A /* LimonIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LimonIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D34472B2BEBE4E600CB8D7A /* LimonIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimonIOSApp.swift; sourceTree = "<group>"; };
 		8D34472D2BEBE4E600CB8D7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,8 +80,13 @@
 		8DA297602BFE08F4001BF80A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8DB0D6C82BF8E1D4007A0589 /* ExtensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionColor.swift; sourceTree = "<group>"; };
 		8DB0D6CB2BF8E531007A0589 /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTextfield.swift; path = "../Presentation/New Group/CustomTextfield.swift"; sourceTree = "<group>"; };
+		8DD220872C1704AE00DEF4FD /* QuestionsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsUseCase.swift; sourceTree = "<group>"; };
+		8DD220892C17053B00DEF4FD /* UseCaseQuestionsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseQuestionsProtocol.swift; sourceTree = "<group>"; };
+		8DD2208B2C17067F00DEF4FD /* QuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
+		8DD2208D2C170DFF00DEF4FD /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		8DD279B12BF3616500FC708F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8DD279B32BF3619000FC708F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8DD379DC2C18BE5A00AB769D /* MockedQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedQuestions.swift; sourceTree = "<group>"; };
 		8DD7FDEF2BF382D700E8C901 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8DD7FDF12BF3836C00E8C901 /* UseCaseAuthProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseAuthProtocol.swift; sourceTree = "<group>"; };
 		8DD7FDF32BF383CB00E8C901 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
@@ -225,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				8DD7FDEF2BF382D700E8C901 /* LoginViewModel.swift */,
+				8DD2208B2C17067F00DEF4FD /* QuestionsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -233,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				8DD7FDFB2BF3A11500E8C901 /* LoginUseCase.swift */,
+				8DD220872C1704AE00DEF4FD /* QuestionsUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -242,6 +258,7 @@
 			children = (
 				8DD7FDF12BF3836C00E8C901 /* UseCaseAuthProtocol.swift */,
 				8DD7FDFD2BF3A14D00E8C901 /* UseCaseLoginProtocol.swift */,
+				8DD220892C17053B00DEF4FD /* UseCaseQuestionsProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -251,6 +268,7 @@
 			children = (
 				8DD7FDF32BF383CB00E8C901 /* LoginResponse.swift */,
 				8D6218392C04D7BD00EBD716 /* LemonButtonCat.swift */,
+				8DD2208D2C170DFF00DEF4FD /* Question.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -258,7 +276,9 @@
 		8D6218362C04CE3700EBD716 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				8D1061552C0F190F0089B8D9 /* QuestionComponent.swift */,
 				8D6218372C04CE4800EBD716 /* LemonButton.swift */,
+				8D1061572C147A5E0089B8D9 /* SegmentedPicker.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -275,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				8DD7FDF92BF39E6900E8C901 /* MockedAuthService.swift */,
+				8DD379DC2C18BE5A00AB769D /* MockedQuestions.swift */,
 			);
 			path = MockedData;
 			sourceTree = "<group>";
@@ -424,19 +445,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DD2208E2C170DFF00DEF4FD /* Question.swift in Sources */,
 				8D6218382C04CE4800EBD716 /* LemonButton.swift in Sources */,
 				8D62183A2C04D7BD00EBD716 /* LemonButtonCat.swift in Sources */,
+				8DD2208C2C17067F00DEF4FD /* QuestionsViewModel.swift in Sources */,
 				8DB0D6CC2BF8E531007A0589 /* CustomTextfield.swift in Sources */,
 				8D1061542C0B45550089B8D9 /* QuestionsView.swift in Sources */,
 				8DD279B22BF3616500FC708F /* LoginView.swift in Sources */,
 				8DD279B42BF3619000FC708F /* HomeView.swift in Sources */,
 				8D34472E2BEBE4E600CB8D7A /* ContentView.swift in Sources */,
 				8DD7FDF72BF3850800E8C901 /* AuthService.swift in Sources */,
+				8D1061582C147A5E0089B8D9 /* SegmentedPicker.swift in Sources */,
+				8DD2208A2C17053B00DEF4FD /* UseCaseQuestionsProtocol.swift in Sources */,
 				8DD7FDFA2BF39E6900E8C901 /* MockedAuthService.swift in Sources */,
 				8DD7FDF02BF382D700E8C901 /* LoginViewModel.swift in Sources */,
+				8DD379DD2C18BE5A00AB769D /* MockedQuestions.swift in Sources */,
 				8DB0D6C92BF8E1D4007A0589 /* ExtensionColor.swift in Sources */,
 				8D34472C2BEBE4E600CB8D7A /* LimonIOSApp.swift in Sources */,
+				8DD220882C1704AE00DEF4FD /* QuestionsUseCase.swift in Sources */,
 				8D391CEC2BFB6F0500495200 /* TokenManager.swift in Sources */,
+				8D1061562C0F190F0089B8D9 /* QuestionComponent.swift in Sources */,
 				8DD7FDFE2BF3A14D00E8C901 /* UseCaseLoginProtocol.swift in Sources */,
 				8DD7FDF22BF3836C00E8C901 /* UseCaseAuthProtocol.swift in Sources */,
 				8DD7FE012BF3A23200E8C901 /* AuthRepository.swift in Sources */,

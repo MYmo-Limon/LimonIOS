@@ -24,6 +24,13 @@ struct LemonButton: View {
             let radius = min(width, height) / 2 * 1.5
             
             ZStack {
+                
+                Image("LemonButtonBG")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .position(x: center.x, y: center.y) // Centra la imagen en el centro del contenedor
+                        .frame(width: radius * 2, height: radius * 2)
+                
                 ForEach(0..<numberOfSlices, id: \.self) { index in
                     
                     let startAngle = Angle(degrees: (360 / Double(numberOfSlices)) * Double(index))
@@ -41,10 +48,10 @@ struct LemonButton: View {
                         y: center.y + radius * 0.7 * CGFloat(sin(midAngle.radians))
                     )
                     
-                    NavigationLink(destination: QuestionsView()) {
+                    NavigationLink(destination: QuestionsView(viewModel: QuestionsViewModel(questions: mockedQuestions, useCase: QuestionsUseCase(), themeTitle: lemonButtonCat[index].name))) {
                         ZStack {
                             LemonSliceShape(startAngle: startAngle, endAngle: endAngle, center: center, radius: radius)
-                                .fill(lemonButtonCat[index].points == 0 ? Color.gray : Color.PrimaryCustom)
+                                .fill(lemonButtonCat[index].points == 0 ? Color.clear : Color.PrimaryCustom.opacity(0.7))
                                 .overlay(
                                     LemonSliceShape(startAngle: startAngle, endAngle: endAngle, center: center, radius: radius)
                                         .stroke(Color.red, lineWidth: 2)
@@ -58,7 +65,6 @@ struct LemonButton: View {
                                     .position(textPosition)
                             }
                         }
-                        .frame(width: width, height: height)
                     }
                     }
                                  

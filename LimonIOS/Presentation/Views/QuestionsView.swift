@@ -9,28 +9,74 @@ import SwiftUI
 
 struct QuestionsView: View {
     
-//    @EnvironmentObject var tokenManager: TokenManager
+    @EnvironmentObject var tokenManager: TokenManager
+    
+    @ObservedObject var vm: QuestionsViewModel
+      
+      init(viewModel: QuestionsViewModel) {
+          self.vm = viewModel
+      }
+    
+    
+    var body: some View {
+        GeometryReader { geometry in
+            ZStack {
+                Image("Background")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: geometry.size.width, height: geometry.size.height)
+                    .edgesIgnoringSafeArea(.all)
+                Color.white.opacity(0.8)
+                    .edgesIgnoringSafeArea(.all)
+                VStack(alignment: .leading) {
+                    Spacer()
+                    ZStack(alignment: .leading) {
+                        Rectangle()
+                            .foregroundColor(.red)
+                            .frame(width: 239, height: 40)
+                            .clipShape(
+                                .rect(
+                                    topLeadingRadius: 0,
+                                    bottomLeadingRadius: 0,
+                                    bottomTrailingRadius: 50,
+                                    topTrailingRadius: 50
+                                )
+                            )
+                        Text(vm.themeTitle)
+                            .foregroundColor(.white)
+                            .padding()
+                    }
+                    Spacer()
+                    QuestionComponent(text: vm.questions[vm.selectedQuestion].text,
+                        selectedOption: $vm.selectedOption)
+                    Text("De una escala del 1  al  5  donde 1  es muy insatisfecho y  5 es muy satisfecho. Responda las siguiente pregunta:  ")
+                        .fontWeight(.thin)
+                        .padding()
+                  
+                    Button(action: {
+                        vm.onPressButton()
+                    }) {
+                        Text((vm.selectedQuestion + 1) < vm.questions.count  ? "Siguiente" : "Finalizar")
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.PrimaryCustom)
+                            .cornerRadius(10)
+                            .foregroundColor(.black)
+                    }
+                    .padding()
 
-    
-    // @ObservedObject var homeViewModel = HomeViewModel(useCase: UseCaseHome())
-    
-    var body: some View{
-     
-        VStack{
-            Text("Preguntas jiji")
-            Spacer()
-            Spacer()
+                    Spacer()
+
+                }
+            }
+            .navigationTitle("Questions")
         }
-        .navigationTitle("Questions")
-
     }
     
 }
     
 
 #Preview {
-    HomeView()
+    QuestionsView(viewModel: QuestionsViewModel(questions: mockedQuestions, useCase: QuestionsUseCase(), themeTitle: "Salud y bienestar"))
         .environmentObject(TokenManager())
 }
-
-
