@@ -32,6 +32,7 @@
 		8DD279B22BF3616500FC708F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD279B12BF3616500FC708F /* LoginView.swift */; };
 		8DD279B42BF3619000FC708F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD279B32BF3619000FC708F /* HomeView.swift */; };
 		8DD379DD2C18BE5A00AB769D /* MockedQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD379DC2C18BE5A00AB769D /* MockedQuestions.swift */; };
+		8DD7F3192C19FACE003FA045 /* BeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7F3182C19FACE003FA045 /* BeeView.swift */; };
 		8DD7FDF02BF382D700E8C901 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7FDEF2BF382D700E8C901 /* LoginViewModel.swift */; };
 		8DD7FDF22BF3836C00E8C901 /* UseCaseAuthProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7FDF12BF3836C00E8C901 /* UseCaseAuthProtocol.swift */; };
 		8DD7FDF42BF383CB00E8C901 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7FDF32BF383CB00E8C901 /* LoginResponse.swift */; };
@@ -87,6 +88,7 @@
 		8DD279B12BF3616500FC708F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8DD279B32BF3619000FC708F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8DD379DC2C18BE5A00AB769D /* MockedQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedQuestions.swift; sourceTree = "<group>"; };
+		8DD7F3182C19FACE003FA045 /* BeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeView.swift; sourceTree = "<group>"; };
 		8DD7FDEF2BF382D700E8C901 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8DD7FDF12BF3836C00E8C901 /* UseCaseAuthProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseAuthProtocol.swift; sourceTree = "<group>"; };
 		8DD7FDF32BF383CB00E8C901 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				8DD279B12BF3616500FC708F /* LoginView.swift */,
 				8DD279B32BF3619000FC708F /* HomeView.swift */,
 				8D1061532C0B45550089B8D9 /* QuestionsView.swift */,
+				8DD7F3182C19FACE003FA045 /* BeeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 				8DD2208A2C17053B00DEF4FD /* UseCaseQuestionsProtocol.swift in Sources */,
 				8DD7FDFA2BF39E6900E8C901 /* MockedAuthService.swift in Sources */,
 				8DD7FDF02BF382D700E8C901 /* LoginViewModel.swift in Sources */,
+				8DD7F3192C19FACE003FA045 /* BeeView.swift in Sources */,
 				8DD379DD2C18BE5A00AB769D /* MockedQuestions.swift in Sources */,
 				8DB0D6C92BF8E1D4007A0589 /* ExtensionColor.swift in Sources */,
 				8D34472C2BEBE4E600CB8D7A /* LimonIOSApp.swift in Sources */,
