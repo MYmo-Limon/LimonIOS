@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View{
         VStack{
             if(!tokenManager.token.isEmpty || tokenManager.token != ""){
-                if(keychain.getKey(key: "isFirstTime").isEmpty){
+                if(keychain.getKey(key: FIRST_TIME_KEY).isEmpty){
                     BeeView(tokenManager: _tokenManager)
                 }else{
                     HomeView(tokenManager: _tokenManager)

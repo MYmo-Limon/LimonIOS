@@ -11,6 +11,9 @@ struct LoginView: View {
     
     @EnvironmentObject var tokenManager: TokenManager
     @ObservedObject var loginViewModel: LoginViewModel
+    //Loading animation
+    @State private var offsetY: CGFloat = 110
+    @State private var offsetX: CGFloat = 110
 
     
     init(tokenManager: TokenManager) {
@@ -28,8 +31,28 @@ struct LoginView: View {
             
             CustomTextField(text: $loginViewModel.userName, placeholder: "Usuario", isSecure: false)
                 .padding()
+            if(loginViewModel.showErroUsername){
+                HStack{
+                    Text("El usuario debe ser un email valido")
+                        .font(.system(size: 12))
+                        .foregroundStyle(.red)
+                        .padding(.leading)
+                    Spacer()
+                }
+            }
+            
             CustomTextField(text: $loginViewModel.password, placeholder: "Contraseña", isSecure: true)
                 .padding()
+            if(loginViewModel.showErrorPassword){
+                HStack{
+                    Text("La contraseña debe contener almenos 5 caracteres")
+                        .font(.system(size: 12))
+                        .multilineTextAlignment(.leading)
+                        .foregroundStyle(.red)
+                        .padding(.leading)
+                    Spacer()
+                }
+            }
 
             HStack{
                 Spacer()
@@ -42,15 +65,26 @@ struct LoginView: View {
             
             Spacer()
             
-            
-            Button("Entrar") {
-                loginViewModel.logIn()
+            if(loginViewModel.isLoading){
+                ProgressView()
+                            .progressViewStyle(CircularProgressViewStyle())
+                            .scaleEffect(1.5)
+            } else {
+                Button("Entrar") {
+                    loginViewModel.logIn()
 
-            }.frame(maxWidth: .infinity)
-                .padding()
-                .background(Color.PrimaryCustom)
-                .cornerRadius(10)
-                .foregroundColor(.black)
+                }.frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color.PrimaryCustom)
+                    .cornerRadius(10)
+                    .foregroundColor(.black)
+                if(loginViewModel.showErrorLogin){
+                        Text("Error al iniciar sesión")
+                            .font(.system(size: 12))
+                            .foregroundStyle(.red)
+                    }
+            }
+            
             
             Spacer()
             Spacer()

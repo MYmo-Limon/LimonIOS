@@ -17,13 +17,14 @@ struct AuthRepository: AuthServiceProtocol {
     
     func signIn(userName: String?, password: String?) -> AnyPublisher<LoginResponse, any Error> {
         if(!isMocked){
-           return AuthService().signIn(userName: userName, password: password)
+            let publisher: AnyPublisher<LoginDTO, any Error>
+           publisher = AuthService().signIn(userName: userName, password: password)
+            return publisher.map { loginResponse in
+                            LoginResponse(token: loginResponse.access, refreshToken : loginResponse.refresh)
+                        }
+                    .eraseToAnyPublisher()
         }else{
            return MockedAuthService().signIn(userName: userName, password: password)
         }
     }
-    
-    
-    
-    
 }

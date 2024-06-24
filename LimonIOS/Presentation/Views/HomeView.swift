@@ -53,7 +53,7 @@ struct HomeView: View {
                 Spacer()
             
                 Button("Borrar token"){
-                    tokenManager.deleteToken()
+                    tokenManager.deleteToken(key: TOKEN_KEY)
                 }
                 
                 Spacer()
@@ -62,7 +62,7 @@ struct HomeView: View {
         }
         .navigationBarBackButtonHidden(true)
         .onAppear(){
-            keychain.save(key: "isFirstTime", value: "false")
+            keychain.save(key: FIRST_TIME_KEY, value: "false")
         }
     }
 }

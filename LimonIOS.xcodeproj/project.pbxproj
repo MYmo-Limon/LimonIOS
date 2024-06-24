@@ -26,6 +26,10 @@
 		8DA297612BFE08F4001BF80A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8DA297602BFE08F4001BF80A /* .gitignore */; };
 		8DB0D6C92BF8E1D4007A0589 /* ExtensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0D6C82BF8E1D4007A0589 /* ExtensionColor.swift */; };
 		8DB0D6CC2BF8E531007A0589 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0D6CB2BF8E531007A0589 /* CustomTextfield.swift */; };
+		8DC236802C29C31E008B7AC2 /* ExtensionURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2367F2C29C31E008B7AC2 /* ExtensionURLResponse.swift */; };
+		8DC236842C29C40B008B7AC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC236832C29C40B008B7AC2 /* Constants.swift */; };
+		8DC236862C29C53B008B7AC2 /* LoginDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC236852C29C53B008B7AC2 /* LoginDTO.swift */; };
+		8DC236882C29CA56008B7AC2 /* Constants2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC236872C29CA56008B7AC2 /* Constants2.swift */; };
 		8DD220882C1704AE00DEF4FD /* QuestionsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD220872C1704AE00DEF4FD /* QuestionsUseCase.swift */; };
 		8DD2208A2C17053B00DEF4FD /* UseCaseQuestionsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD220892C17053B00DEF4FD /* UseCaseQuestionsProtocol.swift */; };
 		8DD2208C2C17067F00DEF4FD /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD2208B2C17067F00DEF4FD /* QuestionsViewModel.swift */; };
@@ -84,6 +88,10 @@
 		8DA297602BFE08F4001BF80A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8DB0D6C82BF8E1D4007A0589 /* ExtensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionColor.swift; sourceTree = "<group>"; };
 		8DB0D6CB2BF8E531007A0589 /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTextfield.swift; path = "../Presentation/New Group/CustomTextfield.swift"; sourceTree = "<group>"; };
+		8DC2367F2C29C31E008B7AC2 /* ExtensionURLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionURLResponse.swift; sourceTree = "<group>"; };
+		8DC236832C29C40B008B7AC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8DC236852C29C53B008B7AC2 /* LoginDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDTO.swift; sourceTree = "<group>"; };
+		8DC236872C29CA56008B7AC2 /* Constants2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants2.swift; sourceTree = "<group>"; };
 		8DD220872C1704AE00DEF4FD /* QuestionsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsUseCase.swift; sourceTree = "<group>"; };
 		8DD220892C17053B00DEF4FD /* UseCaseQuestionsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseQuestionsProtocol.swift; sourceTree = "<group>"; };
 		8DD2208B2C17067F00DEF4FD /* QuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
@@ -204,6 +212,7 @@
 		8D3447562BEBE63A00CB8D7A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				8DC2367E2C29C2FF008B7AC2 /* Extensions */,
 				8D34475D2BEBE89400CB8D7A /* Models */,
 				8D34475C2BEBE68800CB8D7A /* Protocols */,
 				8D34475B2BEBE67F00CB8D7A /* UseCases */,
@@ -225,8 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				8DB0D6CB2BF8E531007A0589 /* CustomTextfield.swift */,
-				8DB0D6C82BF8E1D4007A0589 /* ExtensionColor.swift */,
 				8D391CEB2BFB6F0500495200 /* TokenManager.swift */,
+				8DC236872C29CA56008B7AC2 /* Constants2.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -292,10 +301,37 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		8DD7FDF52BF384F400E8C901 /* Network */ = {
+		8DC2367E2C29C2FF008B7AC2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8DB0D6C82BF8E1D4007A0589 /* ExtensionColor.swift */,
+				8DC2367F2C29C31E008B7AC2 /* ExtensionURLResponse.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8DC236812C29C35F008B7AC2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8DC236852C29C53B008B7AC2 /* LoginDTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8DC236822C29C3F5008B7AC2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				8DD7FDF62BF3850800E8C901 /* AuthService.swift */,
+				8DC236832C29C40B008B7AC2 /* Constants.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8DD7FDF52BF384F400E8C901 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8DC236822C29C3F5008B7AC2 /* Services */,
+				8DC236812C29C35F008B7AC2 /* Models */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -463,6 +499,8 @@
 				8DD279B22BF3616500FC708F /* LoginView.swift in Sources */,
 				8D5092CB2C2341DA009FA30E /* HomeExplanationView.swift in Sources */,
 				8DD279B42BF3619000FC708F /* HomeView.swift in Sources */,
+				8DC236862C29C53B008B7AC2 /* LoginDTO.swift in Sources */,
+				8DC236842C29C40B008B7AC2 /* Constants.swift in Sources */,
 				8D34472E2BEBE4E600CB8D7A /* ContentView.swift in Sources */,
 				8DD7FDF72BF3850800E8C901 /* AuthService.swift in Sources */,
 				8D1061582C147A5E0089B8D9 /* SegmentedPicker.swift in Sources */,
@@ -475,6 +513,7 @@
 				8D34472C2BEBE4E600CB8D7A /* LimonIOSApp.swift in Sources */,
 				8DD220882C1704AE00DEF4FD /* QuestionsUseCase.swift in Sources */,
 				8D391CEC2BFB6F0500495200 /* TokenManager.swift in Sources */,
+				8DC236882C29CA56008B7AC2 /* Constants2.swift in Sources */,
 				8D1061562C0F190F0089B8D9 /* QuestionComponent.swift in Sources */,
 				8DD7FDFE2BF3A14D00E8C901 /* UseCaseLoginProtocol.swift in Sources */,
 				8DD7FDF22BF3836C00E8C901 /* UseCaseAuthProtocol.swift in Sources */,
@@ -482,6 +521,7 @@
 				8DD7FDF42BF383CB00E8C901 /* LoginResponse.swift in Sources */,
 				8DD7FDFC2BF3A11500E8C901 /* LoginUseCase.swift in Sources */,
 				8DD47A8E2C208D5A003EA5BF /* ExplanationView.swift in Sources */,
+				8DC236802C29C31E008B7AC2 /* ExtensionURLResponse.swift in Sources */,
 				8D391CE72BFB5F4800495200 /* Keychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

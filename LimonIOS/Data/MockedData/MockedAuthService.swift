@@ -11,7 +11,7 @@ import Combine
 struct MockedAuthService: AuthServiceProtocol {
     func signIn(userName: String?, password: String?) -> AnyPublisher<LoginResponse, any Error> {
         //TODO
-        let mockedLoginResponse = LoginResponse(token: "MockedToken")
+        let mockedLoginResponse = LoginResponse(token: "MockedToken", refreshToken: "Refreshmock")
                 
         let future = Future<LoginResponse, Error> { promise in
                        promise(.success(mockedLoginResponse))

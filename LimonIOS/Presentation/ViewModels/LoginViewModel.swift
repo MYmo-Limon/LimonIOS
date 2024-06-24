@@ -27,6 +27,7 @@ final class LoginViewModel: ObservableObject {
     @Published var showErroUsername = false
     @Published var showErrorPassword = false
     @Published var showErrorLogin = false
+    @Published var isLoading = false
     
     init(useCase: UseCaseLoginProtocol, tokenManager: TokenManager) {
         self.useCase = useCase
@@ -35,21 +36,34 @@ final class LoginViewModel: ObservableObject {
     
     
     func logIn() {
+        isLoading = true
+        print(isLoading)
         useCase.logIn(user: userName, password: password)
-            .sink { completion in
-                print("Completion vm -> \(completion)")
-            } receiveValue: { loginResponse in
-                    
-                self.tokenManager.token = loginResponse.token
+            .sink { [weak self] completion in
+                switch completion {
+                case .finished:
+                    self?.isLoading = false
+                    break
+                case .failure(let error):
+                    print("Error: \(error.localizedDescription)")
+                    self?.isLoading = false
+                    self?.showErrorLogin = true
+                }
+            } receiveValue: { [weak self] loginResponse in
+                if !loginResponse.token.isEmpty {
+                    self?.tokenManager.token = loginResponse.token
+                    self?.tokenManager.refreshToken = loginResponse.refreshToken
+                }
+                self?.isLoading = false
             }
             .store(in: &suscriptors)
     }
     
     func checkValidUser(userName: String) -> Bool{
-        true
+        userName.contains("@") && userName.contains(".")
     }
     
     func checkValidPassword(password: String) -> Bool{
-        true
+        password.count > 5
     }
 }

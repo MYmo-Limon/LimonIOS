@@ -12,23 +12,32 @@ class TokenManager: ObservableObject {
     @Published var token: String = "" {
         didSet {
 //            print("Token changed: \(token)") // Agrega esta línea para depuración
-            saveToken(token)
+            saveToken(token:token, key: TOKEN_KEY)
         }
     }
+    
+    @Published var refreshToken: String = "" {
+        didSet {
+//            print("REFRESH Token changed: \(refreshToken)") // Agrega esta línea para depuración
+            saveToken(token: token, key: REFRESH_TOKEN_KEY)
+        }
+    }
+    
     
     private let keychain: KeychainProtocol
     
     init(keychain: KeychainProtocol = Keychain()) {
         self.keychain = keychain
-        self.token = keychain.getKey(key: "TOKEN")
+        self.token = keychain.getKey(key: TOKEN_KEY)
+        self.refreshToken = keychain.getKey(key: REFRESH_TOKEN_KEY)
     }
     
-    private func saveToken(_ token: String) {
-        keychain.save(key: "TOKEN", value: token)
+    private func saveToken( token: String, key: String) {
+        keychain.save(key: key, value: token)
     }
     
-    func deleteToken(){
-        keychain.save(key: "TOKEN", value: "")
+    func deleteToken(key: String){
+        keychain.save(key: key, value: "")
         self.token = ""
     }
 }
