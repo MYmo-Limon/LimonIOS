@@ -18,11 +18,6 @@ struct LoginView: View {
        }
     
     var body: some View{
-        Rectangle()
-            .fill(Color.SecondaryCustom)
-            .frame(height: 100)
-            .edgesIgnoringSafeArea(.top)
-        
         VStack{
             Spacer()
             Image("HomeImage")
@@ -61,6 +56,7 @@ struct LoginView: View {
             Spacer()
 
         }
+        .navigationTitle("Home")
         .padding()
     }
     

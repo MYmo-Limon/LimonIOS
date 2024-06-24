@@ -20,6 +20,7 @@
 		8D391CE72BFB5F4800495200 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D391CE62BFB5F4800495200 /* Keychain.swift */; };
 		8D391CEA2BFB5F8000495200 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8D391CE92BFB5F8000495200 /* KeychainSwift */; };
 		8D391CEC2BFB6F0500495200 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D391CEB2BFB6F0500495200 /* TokenManager.swift */; };
+		8D5092CB2C2341DA009FA30E /* HomeExplanationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5092CA2C2341D9009FA30E /* HomeExplanationView.swift */; };
 		8D6218382C04CE4800EBD716 /* LemonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6218372C04CE4800EBD716 /* LemonButton.swift */; };
 		8D62183A2C04D7BD00EBD716 /* LemonButtonCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6218392C04D7BD00EBD716 /* LemonButtonCat.swift */; };
 		8DA297612BFE08F4001BF80A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8DA297602BFE08F4001BF80A /* .gitignore */; };
@@ -32,6 +33,7 @@
 		8DD279B22BF3616500FC708F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD279B12BF3616500FC708F /* LoginView.swift */; };
 		8DD279B42BF3619000FC708F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD279B32BF3619000FC708F /* HomeView.swift */; };
 		8DD379DD2C18BE5A00AB769D /* MockedQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD379DC2C18BE5A00AB769D /* MockedQuestions.swift */; };
+		8DD47A8E2C208D5A003EA5BF /* ExplanationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD47A8D2C208D5A003EA5BF /* ExplanationView.swift */; };
 		8DD7F3192C19FACE003FA045 /* BeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7F3182C19FACE003FA045 /* BeeView.swift */; };
 		8DD7FDF02BF382D700E8C901 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7FDEF2BF382D700E8C901 /* LoginViewModel.swift */; };
 		8DD7FDF22BF3836C00E8C901 /* UseCaseAuthProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7FDF12BF3836C00E8C901 /* UseCaseAuthProtocol.swift */; };
@@ -76,6 +78,7 @@
 		8D3447482BEBE4E800CB8D7A /* LimonIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimonIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8D391CE62BFB5F4800495200 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		8D391CEB2BFB6F0500495200 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		8D5092CA2C2341D9009FA30E /* HomeExplanationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeExplanationView.swift; sourceTree = "<group>"; };
 		8D6218372C04CE4800EBD716 /* LemonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonButton.swift; sourceTree = "<group>"; };
 		8D6218392C04D7BD00EBD716 /* LemonButtonCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonButtonCat.swift; sourceTree = "<group>"; };
 		8DA297602BFE08F4001BF80A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -88,6 +91,7 @@
 		8DD279B12BF3616500FC708F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8DD279B32BF3619000FC708F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		8DD379DC2C18BE5A00AB769D /* MockedQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedQuestions.swift; sourceTree = "<group>"; };
+		8DD47A8D2C208D5A003EA5BF /* ExplanationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplanationView.swift; sourceTree = "<group>"; };
 		8DD7F3182C19FACE003FA045 /* BeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeView.swift; sourceTree = "<group>"; };
 		8DD7FDEF2BF382D700E8C901 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8DD7FDF12BF3836C00E8C901 /* UseCaseAuthProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseAuthProtocol.swift; sourceTree = "<group>"; };
@@ -234,6 +238,8 @@
 				8DD279B32BF3619000FC708F /* HomeView.swift */,
 				8D1061532C0B45550089B8D9 /* QuestionsView.swift */,
 				8DD7F3182C19FACE003FA045 /* BeeView.swift */,
+				8DD47A8D2C208D5A003EA5BF /* ExplanationView.swift */,
+				8D5092CA2C2341D9009FA30E /* HomeExplanationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -455,6 +461,7 @@
 				8DB0D6CC2BF8E531007A0589 /* CustomTextfield.swift in Sources */,
 				8D1061542C0B45550089B8D9 /* QuestionsView.swift in Sources */,
 				8DD279B22BF3616500FC708F /* LoginView.swift in Sources */,
+				8D5092CB2C2341DA009FA30E /* HomeExplanationView.swift in Sources */,
 				8DD279B42BF3619000FC708F /* HomeView.swift in Sources */,
 				8D34472E2BEBE4E600CB8D7A /* ContentView.swift in Sources */,
 				8DD7FDF72BF3850800E8C901 /* AuthService.swift in Sources */,
@@ -474,6 +481,7 @@
 				8DD7FE012BF3A23200E8C901 /* AuthRepository.swift in Sources */,
 				8DD7FDF42BF383CB00E8C901 /* LoginResponse.swift in Sources */,
 				8DD7FDFC2BF3A11500E8C901 /* LoginUseCase.swift in Sources */,
+				8DD47A8E2C208D5A003EA5BF /* ExplanationView.swift in Sources */,
 				8D391CE72BFB5F4800495200 /* Keychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

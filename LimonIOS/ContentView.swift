@@ -9,11 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var tokenManager: TokenManager
-
+    let keychain: KeychainProtocol = Keychain()
     var body: some View{
         VStack{
             if(!tokenManager.token.isEmpty || tokenManager.token != ""){
-                HomeView()
+                if(keychain.getKey(key: "isFirstTime").isEmpty){
+                    BeeView(tokenManager: _tokenManager)
+                }else{
+                    HomeView(tokenManager: _tokenManager)
+                }
             }else{
                 LoginView(tokenManager: tokenManager)
             }

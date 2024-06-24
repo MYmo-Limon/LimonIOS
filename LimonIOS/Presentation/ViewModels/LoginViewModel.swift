@@ -41,7 +41,6 @@ final class LoginViewModel: ObservableObject {
             } receiveValue: { loginResponse in
                     
                 self.tokenManager.token = loginResponse.token
-                //TODO: Navigate to login
             }
             .store(in: &suscriptors)
     }

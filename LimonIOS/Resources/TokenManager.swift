@@ -11,7 +11,7 @@ import Combine
 class TokenManager: ObservableObject {
     @Published var token: String = "" {
         didSet {
-            print("Token changed: \(token)") // Agrega esta línea para depuración
+//            print("Token changed: \(token)") // Agrega esta línea para depuración
             saveToken(token)
         }
     }

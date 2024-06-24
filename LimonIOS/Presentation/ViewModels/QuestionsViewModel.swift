@@ -13,6 +13,7 @@ final class QuestionsViewModel: ObservableObject {
     @Published var selectedQuestion: Int = 0
     @Published var selectedOption: Int = 0
     @Published var themeTitle: String
+    @Published var navigateHome: Bool = false
     private let useCase: UseCaseQuestionsProtocol
 
     
@@ -27,12 +28,11 @@ final class QuestionsViewModel: ObservableObject {
     }
     
     func onPressButton(){
-        
-        
         questions[selectedQuestion].points = (selectedOption + 1)
         if(selectedQuestion + 1 < questions.count){
             selectedQuestion += 1
         }else{
+            self.navigateHome = true
             //TODO: Go to next view
         }
         
