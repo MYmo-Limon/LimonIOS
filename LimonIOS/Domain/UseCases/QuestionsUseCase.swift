@@ -8,6 +8,15 @@
 import Foundation
 import Combine
 final class QuestionsUseCase: UseCaseQuestionsProtocol {
-//    TODO: 
+    func loadQuestions() -> AnyPublisher<Questions, any Error> {
+        fatalError("loadQuestions() has not been implemented yet.")
+    }
+    
+    func sendResponses() {
+        fatalError("sendResponses() has not been implemented yet.")
+
+    }
+    
+
    
 }

@@ -16,7 +16,7 @@ struct ContentView: View {
                 if(keychain.getKey(key: FIRST_TIME_KEY).isEmpty){
                     BeeView(tokenManager: _tokenManager)
                 }else{
-                    HomeView(tokenManager: _tokenManager)
+                    HomeView(tokenManager: tokenManager)
                 }
             }else{
                 LoginView(tokenManager: tokenManager)

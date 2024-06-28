@@ -9,6 +9,8 @@ import Foundation
 typealias Questions = [Question]
 
 struct Question: Codable {
+    let id: String
     let text: String
     var points: Int
+    var userId: String
 }

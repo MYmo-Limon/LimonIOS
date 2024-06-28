@@ -37,12 +37,12 @@ struct HomeExplanationView: View {
             Spacer()
             Spacer()
             
-            LemonButton( lemonButtonCat: [LemonButtonCat(name: "Proposito", points: 0),LemonButtonCat(name: "Propuesta valor", points: 0),LemonButtonCat(name: "Relaciones", points: 0),LemonButtonCat(name: "Espacios", points: 0),LemonButtonCat(name: "Salud y bienestar", points: 0),LemonButtonCat(name: "Prosperidad", points: 0)] )
+            LemonButton( buttonCategories: [Category(id:"1",text: "Proposito", points: 0),Category(id:"1",text: "Propuesta valor", points: 0),Category(id:"1",text: "Relaciones", points: 0),Category(id:"1",text: "Espacios", points: 0),Category(id:"1",text: "Salud y bienestar", points: 0),Category(id:"1",text: "Prosperidad", points: 0)] )
             
             Spacer()
             Spacer()
             
-            NavigationLink(destination: HomeView()){
+            NavigationLink(destination: HomeView(tokenManager: tokenManager)){
                 Text("Siguiente")
                     .padding()
                     .frame(maxWidth: .infinity)

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D0AEC8F2C2ADD6600B7DF8F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AEC8E2C2ADD6600B7DF8F /* HomeViewModel.swift */; };
+		8D0AEC912C2ADDD900B7DF8F /* HomeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AEC902C2ADDD900B7DF8F /* HomeUseCase.swift */; };
+		8D0AEC932C2ADDE700B7DF8F /* UseCaseHomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AEC922C2ADDE700B7DF8F /* UseCaseHomeProtocol.swift */; };
+		8D0AEC952C2ADE4600B7DF8F /* QuestionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AEC942C2ADE4600B7DF8F /* QuestionDTO.swift */; };
+		8D0AEC972C2C5D1D00B7DF8F /* QuestionsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AEC962C2C5D1D00B7DF8F /* QuestionsRepository.swift */; };
+		8D0AEC992C2C5D8600B7DF8F /* QuestionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AEC982C2C5D8600B7DF8F /* QuestionsService.swift */; };
+		8D0AEC9B2C2C5FF800B7DF8F /* CategoryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AEC9A2C2C5FF800B7DF8F /* CategoryDTO.swift */; };
+		8D0AEC9D2C2C658B00B7DF8F /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AEC9C2C2C658B00B7DF8F /* Category.swift */; };
+		8D0AEC9F2C2C68D200B7DF8F /* MockedQuestionsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0AEC9E2C2C68D200B7DF8F /* MockedQuestionsService.swift */; };
 		8D1061542C0B45550089B8D9 /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1061532C0B45550089B8D9 /* QuestionsView.swift */; };
 		8D1061562C0F190F0089B8D9 /* QuestionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1061552C0F190F0089B8D9 /* QuestionComponent.swift */; };
 		8D1061582C147A5E0089B8D9 /* SegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1061572C147A5E0089B8D9 /* SegmentedPicker.swift */; };
@@ -22,7 +31,6 @@
 		8D391CEC2BFB6F0500495200 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D391CEB2BFB6F0500495200 /* TokenManager.swift */; };
 		8D5092CB2C2341DA009FA30E /* HomeExplanationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5092CA2C2341D9009FA30E /* HomeExplanationView.swift */; };
 		8D6218382C04CE4800EBD716 /* LemonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6218372C04CE4800EBD716 /* LemonButton.swift */; };
-		8D62183A2C04D7BD00EBD716 /* LemonButtonCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6218392C04D7BD00EBD716 /* LemonButtonCat.swift */; };
 		8DA297612BFE08F4001BF80A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8DA297602BFE08F4001BF80A /* .gitignore */; };
 		8DB0D6C92BF8E1D4007A0589 /* ExtensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0D6C82BF8E1D4007A0589 /* ExtensionColor.swift */; };
 		8DB0D6CC2BF8E531007A0589 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0D6CB2BF8E531007A0589 /* CustomTextfield.swift */; };
@@ -67,6 +75,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8D0AEC8E2C2ADD6600B7DF8F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8D0AEC902C2ADDD900B7DF8F /* HomeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUseCase.swift; sourceTree = "<group>"; };
+		8D0AEC922C2ADDE700B7DF8F /* UseCaseHomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseHomeProtocol.swift; sourceTree = "<group>"; };
+		8D0AEC942C2ADE4600B7DF8F /* QuestionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDTO.swift; sourceTree = "<group>"; };
+		8D0AEC962C2C5D1D00B7DF8F /* QuestionsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsRepository.swift; sourceTree = "<group>"; };
+		8D0AEC982C2C5D8600B7DF8F /* QuestionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsService.swift; sourceTree = "<group>"; };
+		8D0AEC9A2C2C5FF800B7DF8F /* CategoryDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDTO.swift; sourceTree = "<group>"; };
+		8D0AEC9C2C2C658B00B7DF8F /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		8D0AEC9E2C2C68D200B7DF8F /* MockedQuestionsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedQuestionsService.swift; sourceTree = "<group>"; };
 		8D1061532C0B45550089B8D9 /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
 		8D1061552C0F190F0089B8D9 /* QuestionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionComponent.swift; sourceTree = "<group>"; };
 		8D1061572C147A5E0089B8D9 /* SegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPicker.swift; sourceTree = "<group>"; };
@@ -84,7 +101,6 @@
 		8D391CEB2BFB6F0500495200 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		8D5092CA2C2341D9009FA30E /* HomeExplanationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeExplanationView.swift; sourceTree = "<group>"; };
 		8D6218372C04CE4800EBD716 /* LemonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonButton.swift; sourceTree = "<group>"; };
-		8D6218392C04D7BD00EBD716 /* LemonButtonCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LemonButtonCat.swift; sourceTree = "<group>"; };
 		8DA297602BFE08F4001BF80A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8DB0D6C82BF8E1D4007A0589 /* ExtensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionColor.swift; sourceTree = "<group>"; };
 		8DB0D6CB2BF8E531007A0589 /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTextfield.swift; path = "../Presentation/New Group/CustomTextfield.swift"; sourceTree = "<group>"; };
@@ -258,6 +274,7 @@
 			children = (
 				8DD7FDEF2BF382D700E8C901 /* LoginViewModel.swift */,
 				8DD2208B2C17067F00DEF4FD /* QuestionsViewModel.swift */,
+				8D0AEC8E2C2ADD6600B7DF8F /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -267,6 +284,7 @@
 			children = (
 				8DD7FDFB2BF3A11500E8C901 /* LoginUseCase.swift */,
 				8DD220872C1704AE00DEF4FD /* QuestionsUseCase.swift */,
+				8D0AEC902C2ADDD900B7DF8F /* HomeUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -277,6 +295,7 @@
 				8DD7FDF12BF3836C00E8C901 /* UseCaseAuthProtocol.swift */,
 				8DD7FDFD2BF3A14D00E8C901 /* UseCaseLoginProtocol.swift */,
 				8DD220892C17053B00DEF4FD /* UseCaseQuestionsProtocol.swift */,
+				8D0AEC922C2ADDE700B7DF8F /* UseCaseHomeProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -285,8 +304,8 @@
 			isa = PBXGroup;
 			children = (
 				8DD7FDF32BF383CB00E8C901 /* LoginResponse.swift */,
-				8D6218392C04D7BD00EBD716 /* LemonButtonCat.swift */,
 				8DD2208D2C170DFF00DEF4FD /* Question.swift */,
+				8D0AEC9C2C2C658B00B7DF8F /* Category.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -314,6 +333,8 @@
 			isa = PBXGroup;
 			children = (
 				8DC236852C29C53B008B7AC2 /* LoginDTO.swift */,
+				8D0AEC942C2ADE4600B7DF8F /* QuestionDTO.swift */,
+				8D0AEC9A2C2C5FF800B7DF8F /* CategoryDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -323,6 +344,7 @@
 			children = (
 				8DD7FDF62BF3850800E8C901 /* AuthService.swift */,
 				8DC236832C29C40B008B7AC2 /* Constants.swift */,
+				8D0AEC982C2C5D8600B7DF8F /* QuestionsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -341,6 +363,7 @@
 			children = (
 				8DD7FDF92BF39E6900E8C901 /* MockedAuthService.swift */,
 				8DD379DC2C18BE5A00AB769D /* MockedQuestions.swift */,
+				8D0AEC9E2C2C68D200B7DF8F /* MockedQuestionsService.swift */,
 			);
 			path = MockedData;
 			sourceTree = "<group>";
@@ -349,6 +372,7 @@
 			isa = PBXGroup;
 			children = (
 				8DD7FE002BF3A23200E8C901 /* AuthRepository.swift */,
+				8D0AEC962C2C5D1D00B7DF8F /* QuestionsRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -492,23 +516,29 @@
 			files = (
 				8DD2208E2C170DFF00DEF4FD /* Question.swift in Sources */,
 				8D6218382C04CE4800EBD716 /* LemonButton.swift in Sources */,
-				8D62183A2C04D7BD00EBD716 /* LemonButtonCat.swift in Sources */,
 				8DD2208C2C17067F00DEF4FD /* QuestionsViewModel.swift in Sources */,
 				8DB0D6CC2BF8E531007A0589 /* CustomTextfield.swift in Sources */,
 				8D1061542C0B45550089B8D9 /* QuestionsView.swift in Sources */,
 				8DD279B22BF3616500FC708F /* LoginView.swift in Sources */,
 				8D5092CB2C2341DA009FA30E /* HomeExplanationView.swift in Sources */,
+				8D0AEC932C2ADDE700B7DF8F /* UseCaseHomeProtocol.swift in Sources */,
+				8D0AEC9D2C2C658B00B7DF8F /* Category.swift in Sources */,
 				8DD279B42BF3619000FC708F /* HomeView.swift in Sources */,
 				8DC236862C29C53B008B7AC2 /* LoginDTO.swift in Sources */,
+				8D0AEC9F2C2C68D200B7DF8F /* MockedQuestionsService.swift in Sources */,
 				8DC236842C29C40B008B7AC2 /* Constants.swift in Sources */,
 				8D34472E2BEBE4E600CB8D7A /* ContentView.swift in Sources */,
 				8DD7FDF72BF3850800E8C901 /* AuthService.swift in Sources */,
 				8D1061582C147A5E0089B8D9 /* SegmentedPicker.swift in Sources */,
+				8D0AEC992C2C5D8600B7DF8F /* QuestionsService.swift in Sources */,
 				8DD2208A2C17053B00DEF4FD /* UseCaseQuestionsProtocol.swift in Sources */,
 				8DD7FDFA2BF39E6900E8C901 /* MockedAuthService.swift in Sources */,
+				8D0AEC952C2ADE4600B7DF8F /* QuestionDTO.swift in Sources */,
 				8DD7FDF02BF382D700E8C901 /* LoginViewModel.swift in Sources */,
+				8D0AEC8F2C2ADD6600B7DF8F /* HomeViewModel.swift in Sources */,
 				8DD7F3192C19FACE003FA045 /* BeeView.swift in Sources */,
 				8DD379DD2C18BE5A00AB769D /* MockedQuestions.swift in Sources */,
+				8D0AEC9B2C2C5FF800B7DF8F /* CategoryDTO.swift in Sources */,
 				8DB0D6C92BF8E1D4007A0589 /* ExtensionColor.swift in Sources */,
 				8D34472C2BEBE4E600CB8D7A /* LimonIOSApp.swift in Sources */,
 				8DD220882C1704AE00DEF4FD /* QuestionsUseCase.swift in Sources */,
@@ -516,8 +546,10 @@
 				8DC236882C29CA56008B7AC2 /* Constants2.swift in Sources */,
 				8D1061562C0F190F0089B8D9 /* QuestionComponent.swift in Sources */,
 				8DD7FDFE2BF3A14D00E8C901 /* UseCaseLoginProtocol.swift in Sources */,
+				8D0AEC972C2C5D1D00B7DF8F /* QuestionsRepository.swift in Sources */,
 				8DD7FDF22BF3836C00E8C901 /* UseCaseAuthProtocol.swift in Sources */,
 				8DD7FE012BF3A23200E8C901 /* AuthRepository.swift in Sources */,
+				8D0AEC912C2ADDD900B7DF8F /* HomeUseCase.swift in Sources */,
 				8DD7FDF42BF383CB00E8C901 /* LoginResponse.swift in Sources */,
 				8DD7FDFC2BF3A11500E8C901 /* LoginUseCase.swift in Sources */,
 				8DD47A8E2C208D5A003EA5BF /* ExplanationView.swift in Sources */,

@@ -17,7 +17,7 @@ struct AuthService {
     func signIn(userName: String?, password: String?) -> AnyPublisher<LoginDTO, any Error> {
         let urlLogin = "\(server)\(endpoints.login.rawValue)"
         
-        var url = URL(string: urlLogin)!
+        let url = URL(string: urlLogin)!
         
 
         

@@ -55,7 +55,7 @@ struct QuestionsView: View {
                             .padding()
                         
                         if((vm.selectedQuestion + 1) >= vm.questions.count){
-                            NavigationLink(destination: HomeView()){Text("Finalizar")
+                            NavigationLink(destination: HomeView(tokenManager: tokenManager)){Text("Finalizar")
                                     .padding()
                                     .frame(maxWidth: .infinity)
                                     .background(Color.PrimaryCustom)
@@ -77,7 +77,7 @@ struct QuestionsView: View {
                 }
                 .navigationTitle("Questions")
                 .navigationDestination(isPresented: $vm.navigateHome) {
-                    HomeView()
+                    HomeView(tokenManager: tokenManager)
                 }
             }
         }

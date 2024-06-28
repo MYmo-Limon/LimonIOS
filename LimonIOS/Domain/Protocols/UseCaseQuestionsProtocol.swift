@@ -8,5 +8,6 @@
 import Foundation
 import Combine
 protocol UseCaseQuestionsProtocol {
-//TODO: See the endpoints
+    func loadQuestions() -> AnyPublisher<Questions, Error>
+    func sendResponses()
 }

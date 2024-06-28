@@ -19,4 +19,5 @@ let contentType = "application/json"
 
 enum endpoints: String {
     case login = "/login/"
+    case categories = "/categories/"
 }

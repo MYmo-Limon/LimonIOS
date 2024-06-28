@@ -12,7 +12,11 @@ struct HomeView: View {
     @EnvironmentObject var tokenManager: TokenManager
     let keychain: KeychainProtocol = Keychain()
     
-    // @ObservedObject var homeViewModel = HomeViewModel(useCase: UseCaseHome())
+    @ObservedObject var homeViewModel : HomeViewModel
+    
+    init(tokenManager: TokenManager) {
+           self.homeViewModel = HomeViewModel(useCase: HomeUseCase(), tokenManager: tokenManager)
+       }
     
     var body: some View{
         NavigationStack{
@@ -49,7 +53,7 @@ struct HomeView: View {
                     }
                     .padding(.trailing)
                 }
-            LemonButton( lemonButtonCat: [LemonButtonCat(name: "Proposito", points: 3),LemonButtonCat(name: "Propuesta valor", points: 0),LemonButtonCat(name: "Relaciones", points: 0),LemonButtonCat(name: "Espacios", points: 0),LemonButtonCat(name: "Salud y bienestar", points: 0),LemonButtonCat(name: "Prosperidad", points: 0)] )
+            LemonButton(buttonCategories: homeViewModel.categories )
                 Spacer()
             
                 Button("Borrar token"){
@@ -62,6 +66,7 @@ struct HomeView: View {
         }
         .navigationBarBackButtonHidden(true)
         .onAppear(){
+            homeViewModel.loadCategories()
             keychain.save(key: FIRST_TIME_KEY, value: "false")
         }
     }
@@ -69,8 +74,7 @@ struct HomeView: View {
     
 
 #Preview {
-    HomeView()
-        .environmentObject(TokenManager())
+    HomeView(tokenManager: TokenManager())
 }
 
 
