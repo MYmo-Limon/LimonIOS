@@ -13,4 +13,6 @@ extension Color {
     static let PrimaryCustom = Color("PrimaryCustom")
     static let SecondaryCustom = Color("SecondaryCustom")
     static let CustomGrey = Color("CustomGrey")
+    static let DeepGrey = Color("DeepGrey")
+
 }

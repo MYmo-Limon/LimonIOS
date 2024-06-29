@@ -8,6 +8,14 @@
 import Foundation
 import Combine
 struct QuestionsRepository: QuestionsServiceProtocol {
+    func loadQuestions() -> AnyPublisher<Questions, any Error> {
+        fatalError("unimplemented method")
+    }
+    
+    func sendAnswers() {
+        fatalError("unimplemented method")
+    }
+    
 
     let isMocked: Bool
     

@@ -19,6 +19,7 @@
 		8D1061542C0B45550089B8D9 /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1061532C0B45550089B8D9 /* QuestionsView.swift */; };
 		8D1061562C0F190F0089B8D9 /* QuestionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1061552C0F190F0089B8D9 /* QuestionComponent.swift */; };
 		8D1061582C147A5E0089B8D9 /* SegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1061572C147A5E0089B8D9 /* SegmentedPicker.swift */; };
+		8D1D13F32C2EAEB700A01B4F /* CompletedLemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1D13F22C2EAEB700A01B4F /* CompletedLemonView.swift */; };
 		8D34472C2BEBE4E600CB8D7A /* LimonIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34472B2BEBE4E600CB8D7A /* LimonIOSApp.swift */; };
 		8D34472E2BEBE4E600CB8D7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34472D2BEBE4E600CB8D7A /* ContentView.swift */; };
 		8D3447302BEBE4E800CB8D7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D34472F2BEBE4E800CB8D7A /* Assets.xcassets */; };
@@ -34,6 +35,8 @@
 		8DA297612BFE08F4001BF80A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8DA297602BFE08F4001BF80A /* .gitignore */; };
 		8DB0D6C92BF8E1D4007A0589 /* ExtensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0D6C82BF8E1D4007A0589 /* ExtensionColor.swift */; };
 		8DB0D6CC2BF8E531007A0589 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0D6CB2BF8E531007A0589 /* CustomTextfield.swift */; };
+		8DB9089C2C30632B003C163F /* ResultLemonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9089B2C30632A003C163F /* ResultLemonView.swift */; };
+		8DB9089E2C306786003C163F /* AllCompletedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9089D2C306786003C163F /* AllCompletedScreen.swift */; };
 		8DC236802C29C31E008B7AC2 /* ExtensionURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC2367F2C29C31E008B7AC2 /* ExtensionURLResponse.swift */; };
 		8DC236842C29C40B008B7AC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC236832C29C40B008B7AC2 /* Constants.swift */; };
 		8DC236862C29C53B008B7AC2 /* LoginDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC236852C29C53B008B7AC2 /* LoginDTO.swift */; };
@@ -87,6 +90,7 @@
 		8D1061532C0B45550089B8D9 /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
 		8D1061552C0F190F0089B8D9 /* QuestionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionComponent.swift; sourceTree = "<group>"; };
 		8D1061572C147A5E0089B8D9 /* SegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPicker.swift; sourceTree = "<group>"; };
+		8D1D13F22C2EAEB700A01B4F /* CompletedLemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedLemonView.swift; sourceTree = "<group>"; };
 		8D3447282BEBE4E600CB8D7A /* LimonIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LimonIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D34472B2BEBE4E600CB8D7A /* LimonIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimonIOSApp.swift; sourceTree = "<group>"; };
 		8D34472D2BEBE4E600CB8D7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 		8DA297602BFE08F4001BF80A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8DB0D6C82BF8E1D4007A0589 /* ExtensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionColor.swift; sourceTree = "<group>"; };
 		8DB0D6CB2BF8E531007A0589 /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTextfield.swift; path = "../Presentation/New Group/CustomTextfield.swift"; sourceTree = "<group>"; };
+		8DB9089B2C30632A003C163F /* ResultLemonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultLemonView.swift; sourceTree = "<group>"; };
+		8DB9089D2C306786003C163F /* AllCompletedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCompletedScreen.swift; sourceTree = "<group>"; };
 		8DC2367F2C29C31E008B7AC2 /* ExtensionURLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionURLResponse.swift; sourceTree = "<group>"; };
 		8DC236832C29C40B008B7AC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8DC236852C29C53B008B7AC2 /* LoginDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDTO.swift; sourceTree = "<group>"; };
@@ -265,6 +271,9 @@
 				8DD7F3182C19FACE003FA045 /* BeeView.swift */,
 				8DD47A8D2C208D5A003EA5BF /* ExplanationView.swift */,
 				8D5092CA2C2341D9009FA30E /* HomeExplanationView.swift */,
+				8D1D13F22C2EAEB700A01B4F /* CompletedLemonView.swift */,
+				8DB9089B2C30632A003C163F /* ResultLemonView.swift */,
+				8DB9089D2C306786003C163F /* AllCompletedScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -530,13 +539,16 @@
 				8D34472E2BEBE4E600CB8D7A /* ContentView.swift in Sources */,
 				8DD7FDF72BF3850800E8C901 /* AuthService.swift in Sources */,
 				8D1061582C147A5E0089B8D9 /* SegmentedPicker.swift in Sources */,
+				8DB9089C2C30632B003C163F /* ResultLemonView.swift in Sources */,
 				8D0AEC992C2C5D8600B7DF8F /* QuestionsService.swift in Sources */,
 				8DD2208A2C17053B00DEF4FD /* UseCaseQuestionsProtocol.swift in Sources */,
 				8DD7FDFA2BF39E6900E8C901 /* MockedAuthService.swift in Sources */,
 				8D0AEC952C2ADE4600B7DF8F /* QuestionDTO.swift in Sources */,
+				8DB9089E2C306786003C163F /* AllCompletedScreen.swift in Sources */,
 				8DD7FDF02BF382D700E8C901 /* LoginViewModel.swift in Sources */,
 				8D0AEC8F2C2ADD6600B7DF8F /* HomeViewModel.swift in Sources */,
 				8DD7F3192C19FACE003FA045 /* BeeView.swift in Sources */,
+				8D1D13F32C2EAEB700A01B4F /* CompletedLemonView.swift in Sources */,
 				8DD379DD2C18BE5A00AB769D /* MockedQuestions.swift in Sources */,
 				8D0AEC9B2C2C5FF800B7DF8F /* CategoryDTO.swift in Sources */,
 				8DB0D6C92BF8E1D4007A0589 /* ExtensionColor.swift in Sources */,

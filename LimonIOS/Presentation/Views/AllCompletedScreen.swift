@@ -1,13 +1,14 @@
 //
-//  HomeExplanation.swift
+//  AllCompletedScreen.swift
 //  LimonIOS
 //
-//  Created by Marcos on 18/6/24.
+//  Created by Marcos on 29/6/24.
 //
 
+import Foundation
 import SwiftUI
 
-struct HomeExplanationView: View {
+struct AllCompletedView: View {
     
     @EnvironmentObject var tokenManager: TokenManager
     
@@ -20,7 +21,7 @@ struct HomeExplanationView: View {
             ZStack{
                 Rectangle()
                     .fill(Color.DeepGrey)
-                    .frame(width: 357 , height: 219)
+                    .frame(width: 357 , height: 161)
                     .clipShape(
                         .rect(
                             topLeadingRadius: 0,
@@ -29,7 +30,7 @@ struct HomeExplanationView: View {
                             topTrailingRadius: 10
                         )
                     )
-                Text("Te voy a estar preguntando qué nivel de satisfacción laboral tienes en relación a cada uno de estos 6 ámbitos, para que veamos cuál es el que tienes más oportunidades de mejoras. Este LIMON te acompañará a visibilizar el equilibrio entre lo que das y lo que recibes. Lo vas a medir tu con respecto a tu conexión con cada ámbito, nivel de energía o satisfacción.")
+                Text("Si quieres compartir conmigo más reflexiones, elige  3 ámbitos prioritarios o en los que consideres que tienes mayores oportunidades de mejora ")
                     .foregroundStyle(.white)
                     .padding()
             }
@@ -42,27 +43,15 @@ struct HomeExplanationView: View {
             
             Spacer()
             Spacer()
-            
-            NavigationLink(destination: HomeView(tokenManager: tokenManager)){
-                Text("Siguiente")
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(Color.PrimaryCustom)
-                    .cornerRadius(10)
-                    .foregroundColor(.black)
-            }
-            .padding()
             Spacer()
-        
-            
         }
-        .navigationBarBackButtonHidden(true)
+        .navigationTitle("Resultados")
     }
 }
     
 
 #Preview {
-    HomeExplanationView()
+    ResultLemonView()
         .environmentObject(TokenManager())
 }
 
